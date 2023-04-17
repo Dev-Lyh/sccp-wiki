@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>SCCP Wiki | @Dev-Lyh</title>
+</head>
+
+<body>
+    <h1>Sistema de Conversao de Cartao Ponto</h1>
+    <h2>Documentacao em formato de wiki para o entendimento do software.</h2>
+    <code>MIT Licence - Baseada na versao 1.0.0 do software</code>
+    <br>
+    <div id="files">
+        <details>
+            <summary>Arquivo <code>read.py</code></summary>
+            <details class="into">
+                <summary>read_hours_one(quantity_of_pages: int, path: string, destiny_path:string)</summary>
+                <p class="into_details">
+                    <strong>quantity_of_pages</strong>: valor dado na interface, controle do usuário;
+                    <br>
+                    <strong>path</strong>: valor dado na interface. Arquivo de origem para conversão, controle do usuário;
+                    <br>
+                    <strong>destiny_path</strong>: Pasta de destino do arquivo final dado pelo usuário.
+                    <br>
+                    Leitura das páginas PDF são feitas dentro do loop while.
+                    <br>
+                    Lê o modelo antigo dos cartões ponto.
+                    A cada página lida, e criado um arquivo csv com o resultado da leitura feita pelo tabula. Após a
+                    criação do arquivo, essas informações são passadas para um arquivo chamado all_pages.csv já com os
+                    filtros feitos – filtros do arquivo filters.py.
+                    <br>
+                    Logo após os dados filtrados entrarem em all_pages.csv, o arquivo original e excluído. Para cada
+                    página e feito esse processo.
+
+                </p>
+            </details>
+        </details>
+        <details>
+            <summary>Arquivo <code>filters.py</code></summary>
+            Something small enough to escape casual notice.
+        </details>
+        <details>
+            <summary>Arquivo <code>interface.py</code></summary>
+            Something small enough to escape casual notice.
+        </details>
+    </div>
+
+</body>
+
+</html>
